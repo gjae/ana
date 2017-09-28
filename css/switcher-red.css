@@ -1,0 +1,463 @@
+/*
+USE
+ .TestClass {
+ .hex-to-rgba ((@brand-color, .6);
+  color: @rgba;
+}
+
+*/
+/*
+.TestClass {
+  .bg-rgba(@brand-color, .9);
+}
+
+*/
+/*
+.font-size(@sizeValue) {
+  @remValue: @sizeValue;
+  @pxValue: (@sizeValue * 10);
+  font-size: ~"@{pxValue}px";
+  font-size: ~"@{remValue}rem";
+
+}
+*/
+/*
+.font-size(@font-size){
+  @pxFontValue: (@font-size / 10);
+  @pxLineValue: (@font-size / 10 * 1.5);
+  font-size: @font-size * 1px;
+  line-height: @font-size * 1.5 * 1px;
+  font-size: ~"@{pxFontValue}rem";
+  line-height: ~"@{pxLineValue}rem";
+}*/
+/* ==========================================================================
+        Style Switcher CSS For  Color OverWrite
+  ========================================================================== */
+a,
+a:hover,
+a:focus {
+    color: #e74c3c;
+    text-decoration: none;
+}
+.cbx-subscribe-form {
+    border-color: #cd2a19;
+}
+.cblz-next:focus {
+    background: #e74c3c;
+    border-color: #e74c3c;
+}
+#lz-headertop .cbx-header-inner {
+    background: rgba(231, 76, 60, 0.85);
+}
+.lz-main-heading > span.lz-brand {
+    color: #e74c3c;
+}
+.lz-overlap {
+    background-color: #e74c3c;
+}
+.lz-submit-btn {
+    background-color: #e74c3c;
+}
+.lz-brand-color,
+.lz-icon {
+    color: #e74c3c;
+}
+.lz-flip .card .back {
+    background: #e74c3c;
+}
+.portfolio-select .hvr-underline-from-center:before {
+    background: #e74c3c;
+}
+.og-details h3,
+.da-thumbs li a {
+    color: #e74c3c;
+}
+.portfolio-select ul li {
+    border: 2px solid #e74c3c;
+    color: #e74c3c;
+}
+.lz-team-img img {
+    border: 4px solid #e74c3c;
+}
+.lz-git-form-control {
+    border: 1px solid #e74c3c;
+}
+.lz-git-submit-btn {
+    background-color: #ffffff;
+    border: 1px solid #e74c3c;
+}
+.lz-git-submit-btn:hover,
+.lz-git-submit-btn:focus,
+.lz-git-submit-btn:active {
+    background-color: #e74c3c;
+}
+.price-text-color {
+    color: #e74c3c;
+}
+.lz-latest-post-view-all {
+    color: #e74c3c;
+}
+.cblz-next {
+    background: #e74c3c;
+    border-color: #e74c3c;
+}
+.btn-success:hover,
+.btn-success:focus {
+    background-color: #e74c3c;
+}
+.lz-col-item .lz-ltp-back div,
+.lz-col-item .lz-ltp-back p,
+.lz-col-item .lz-ltp-back a {
+    background: #e74c3c;
+}
+.cbx-block-text a {
+    color: #e74c3c;
+}
+#carousel-reviews .carousel-control.right {
+    color: #e74c3c;
+}
+.cbx-person-text a {
+    color: #e74c3c;
+}
+.cblz-newnext {
+    color: #e74c3c;
+}
+.item blockquote p:before {
+    color: #e74c3c;
+}
+#quote-carousel .carousel-indicators .active {
+    background: #e74c3c;
+}
+.cblz-footer-content .lz-brand {
+    color: #e74c3c !important;
+}
+#subscribe {
+    color: #e74c3c !important;
+}
+input#subscribe::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #e74c3c;
+}
+input#subscribe::-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #e74c3c;
+    opacity: 1;
+}
+input#subscribe::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #e74c3c;
+    opacity: 1;
+}
+input#subscribe::ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #e74c3c;
+}
+::-webkit-input-placeholder {
+    color: #e74c3c;
+}
+#carousel-reviews .carousel-control.left {
+    color: #e74c3c;
+}
+.lz-submit-btn:hover {
+    background-color: #e74c3c !important;
+}
+.lz-social-list:hover {
+    background: #ffffff;
+}
+.lz-tooltip-inner {
+    background: #ffffff;
+}
+.lz-tooltip .lz-tooltip-arrow {
+    border-top-color: #e74c3c !important;
+}
+.cblz-next {
+    background: #e74c3c;
+}
+#carousel-reviews .carousel-control.left,
+.carousel-control.right:hover,
+.cblz-next:active {
+    background: none;
+}
+.carousel-control,
+.carousel-control i,
+.carousel-control:hover {
+    color: #e74c3c;
+    opacity: 1;
+}
+.lz-switcher-btn {
+    background: #e74c3c;
+}
+.lz-latest-controls a,
+.lz-latest-controls a:hover,
+.lz-latest-controls a:active {
+    color: #fff;
+    background: #e74c3c;
+}
+.og-details a:hover {
+    border-color: #e74c3c;
+}
+div.lz-kkcountdown .kkc-dni-text,
+div.lz-kkcountdown .kkc-godz-text,
+div.lz-kkcountdown .kkc-min-text,
+div.lz-kkcountdown .kkc-sec-text,
+div.lz-kkcountdown .kkc-days-text,
+div.lz-kkcountdown .kkc-hours-text {
+    margin-right: 10px;
+    color: #fff;
+}
+#cbx-team .font-single-img img {
+    border: 1px solid #e74c3c;
+}
+.cbx-heading h2 {
+    color: #e74c3c;
+}
+.cbx-heading hr {
+    border-color: #e74c3c;
+    border: 2px dashed #e74c3c;
+}
+.col-item {
+    border-color: #e74c3c;
+}
+.col-item:hover {
+    border-color: #e74c3c;
+}
+.cbx-contactform-area .cbx-contactform-inner {
+    background: rgba(231, 76, 60, 0.9);
+}
+#cbx-team .cbx-font-side {
+    border: 1px solid #e74c3c;
+}
+.cbx-input-group input:focus {
+    border: 1px dashed #e74c3c;
+}
+.lz-facebook,
+.lz-twitter,
+.lz-instagram,
+.lz-google,
+.lz-linkedin,
+.lz-tumblr,
+.lz-rss {
+    background: #e74c3c none repeat scroll 0 0;
+}
+#cbx-aboutus .cbx-about-text p span a {
+    color: #e74c3c;
+}
+#cbx-aboutus .cbx-single-item:hover {
+    background: #e74c3c none repeat scroll 0 0;
+}
+#cbx-aboutus .cbx-single-item .single-fa {
+    color: #e74c3c;
+}
+#cbx-aboutus .cbx-about-text p span a {
+    color: #e74c3c;
+}
+#cbx-aboutus .cbx-single-item .single-fa {
+    color: #e74c3c;
+}
+#cbx-aboutus .cbx-single-item:hover {
+    background: #e74c3c;
+}
+#cbx-aboutus .cbx-single-item:hover .single-fa {
+    background: #cd2a19;
+}
+#cbx-aboutus .cbx-single-item:hover a:hover {
+    color: #cd2a19;
+}
+.portfolio-select ul li:hover,
+.portfolio-select ul li:active {
+    border: 2px dashed #e74c3c;
+}
+#cbx-team .cbx-font-side {
+    border: 1px solid #e74c3c;
+}
+#cbx-team .cbx-back-side {
+    background: #e74c3c;
+}
+#cbx-team .cbx-member-social i {
+    color: #cd2a19;
+}
+#cbx-team .font-single-img img {
+    border: 1px solid #e74c3c;
+}
+.col-item:hover {
+    background: #e74c3c none repeat scroll 0 0;
+}
+#cbx-award .cbx-counter-area i {
+    background: #e74c3c;
+}
+#cbx-award .cbx-counter-area:hover {
+    background: #e74c3c;
+}
+#cbx-award .cbx-counter-area:hover i {
+    background: #cd2a19;
+}
+#cbx-pricing .single-pricing .spricing-top h3 {
+    color: #e74c3c;
+}
+#cbx-pricing .single-pricing .spricing-bottom h3 {
+    color: #e74c3c;
+}
+#cbx-pricing .single-pricing .spricing-bottom a {
+    color: #e74c3c;
+}
+#cbx-pricing .single-pricing ul li i {
+    color: #e74c3c;
+}
+#cbx-pricing .single-pricing:hover {
+    border: 1px dashed #e74c3c;
+}
+#cbx-pricing .recommended-pricing {
+    background: #e74c3c;
+}
+#cbx-pricing .recommended-pricing .spricing-bottom h3 {
+    color: #ffffff;
+}
+#cbx-pricing .recommended-pricing .spricing-bottom a {
+    color: #e74c3c;
+}
+#cbx-pricing .recommended-pricing .spricing-bottom a:hover {
+    background: #cd2a19;
+}
+#cbx-news .single-news .snews-bottom h4 {
+    color: #e74c3c;
+}
+#cbx-news .single-news .snews-bottom a {
+    background: #e74c3c;
+}
+#cbx-news .single-news:hover .snews-bottom {
+    background: #e74c3c;
+}
+#cbx-news .single-news:hover .snews-bottom a {
+    color: #e74c3c;
+}
+#cbx-news .single-news:hover .snews-bottom a:hover {
+    background: #cd2a19;
+}
+.glyphicon {
+    color: #e74c3c;
+}
+.lz-git-submit-btn {
+    /* background-color: @brandcolor2;*/
+    border: 1px solid #cd2a19;
+}
+.lz-git-submit-btn:hover,
+.lz-git-submit-btn:focus,
+.lz-git-submit-btn:active {
+    background-color: #cd2a19;
+}
+.lz-git-form-control {
+    border: 1px solid #ed7669 !important;
+}
+.lz-git-form-control {
+    border: 1px solid #ed7669 !important;
+}
+.lz-git-form-control:focus {
+    border: 1px dashed #e74c3c !important;
+}
+.cbx-contact-info p span a:hover {
+    background: #cd2a19 none repeat scroll 0 0;
+}
+.cbx-submit {
+    color: #e74c3c;
+}
+.cbx-submit:hover {
+    border: 2px solid #cd2a19;
+}
+#cbx-portfolio .cbx-select li a.active {
+    color: #e74c3c;
+}
+#cbx-portfolio .single-portfolio .figure-caption {
+    background: rgba(231, 76, 60, 0.8);
+}
+.cbx-contact-info p span a {
+    color: #e74c3c;
+}
+input.placeholder-style::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #e74c3c;
+}
+input.placeholder-style::-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #e74c3c;
+    opacity: 1;
+}
+input.placeholder-style::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #e74c3c;
+    opacity: 1;
+}
+input.placeholder-style::ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #e74c3c;
+}
+textarea.placeholder-style::-webkit-textarea-placeholder {
+    /* WebKit browsers */
+    color: #e74c3c;
+}
+textarea.placeholder-style::-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #e74c3c;
+    opacity: 1;
+}
+textarea.placeholder-style::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #e74c3c;
+    opacity: 1;
+}
+textarea.placeholder-style::ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #e74c3c;
+}
+::-webkit-input-placeholder {
+    color: #e74c3c;
+}
+.lz-git-submit-btn {
+    background-color: #e74c3c;
+}
+.lz-social-list:hover {
+    color: #e74c3c;
+}
+.lz-tooltip-inner {
+    background: #e74c3c;
+}
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #e74c3c;
+}
+/* NEW CODE*/
+::-webkit-input-placeholder {
+    color: #e74c3c;
+}
+:-moz-placeholder {
+    color: #e74c3c;
+}
+::-moz-placeholder {
+    color: #e74c3c;
+}
+:-ms-input-placeholder {
+    color: #e74c3c;
+}
+/* Different color for some fields */
+#name_2::-webkit-input-placeholder,
+#textarea_2::-webkit-input-placeholder {
+    color: #e74c3c;
+}
+#name_2:-moz-placeholder,
+#textarea_2:-moz-placeholder {
+    color: #e74c3c;
+}
+#name_2::-moz-placeholder,
+#textarea_2::-moz-placeholder {
+    color: #e74c3c;
+}
+#name_2:-ms-input-placeholder,
+#textarea_2:-ms-input-placeholder {
+    color: #e74c3c;
+}
+/* NEW CODE END*/
+#cbx-team .cbx-font-side  {
+    border-color: #e74c3c;
+}
+/* ==========================================================================
+        Style Switcher CSS For  Color OverWrite END
+  ========================================================================== */

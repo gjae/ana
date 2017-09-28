@@ -1,0 +1,28 @@
+#lz-headertop .cbx-header-inner {
+    background: RGBA(145, 15, 15, 0);
+
+}
+#lz-headertop .cbx-header-inner {
+    background: RGBA(145, 15, 15, 0);
+}
+
+.lz-facebook, .lz-twitter, .lz-instagram, .lz-google, .lz-linkedin, .lz-tumblr, .lz-rss {
+    background: RGB(145, 15, 15) none repeat scroll 0 0;
+}
+
+.cbx-heading h2 {
+    color: #910F0F;
+}
+
+.cbx-heading hr {
+    border-color: #910F0F;
+    border: 2px dashed #910F0F;
+}
+#lz-headertop {
+    background: url('../img/header3.jpg') center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    color: #fff;
+}
