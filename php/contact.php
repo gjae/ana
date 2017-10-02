@@ -8,12 +8,12 @@ define('DS', DIRECTORY_SEPARATOR);
 // the csv file location is /php/contacts.csv
 $save_in_csv = false;
 
-$admin_email_to         = 'sabuj@codeboxr.com'; // admin email who will get the contact email alert
-$admin_email_to_name    = "Company Name"; // Admin Name/Company name who will get the email alert
-$admin_email_from       = 'info@codeboxr.com';  // admin email from which email address email will be sent
-$admin_email_from_name  = 'System'; //admin name from which email will be sent
-$admin_send_subject     = 'Contact form alert'; //email subject what the admin will get as contact email alert
-$user_send_subject      = 'Thanks for contact, your copy'; //email subject what the user will get if the user agreed or select "copy me"
+$admin_email_to         = 'correo_contacto'; // admin email who will get the contact email alert
+$admin_email_to_name    = "SYNERGY BUSINESS SOLUTIONS"; // Admin Name/Company name who will get the email alert
+$admin_email_from       = 'correo_de_envio';  // admin email from which email address email will be sent
+$admin_email_from_name  = 'www.consultingsbs.com'; //admin name from which email will be sent
+$admin_send_subject     = 'Mensaje de alerta de contacto'; //email subject what the admin will get as contact email alert
+$user_send_subject      = 'Gracias por contactarnos. Este es tu copia del correo'; //email subject what the user will get if the user agreed or select "copy me"
 
 //end options parameter for user
 
@@ -85,7 +85,13 @@ if ($_POST) {
 
         //create an instance of phpmailer class
         $mail = new PHPMailer;
-
+        $mail->IsSMTP();
+        $mail->Host = "smtp.gmail.com";
+        $mail->SMTPAuth = true;
+        $mail->SMTPSecure = 'ssl';
+        $mail->Port = 465;
+        $mail->Username = 'correo@electronico.com';
+        $mail->Password = 'clave';
         //some config if you need help based on your server configuration
        // $mail->Host = 'localhost';  // Specify main and backup SMTP servers
 
@@ -121,14 +127,13 @@ if ($_POST) {
         //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
         if($mail->send() === true) {
-            $validation_message['successmessage'] = 'Message has been sent successfully !';
+            $validation_message['successmessage'] = 'Mensaje enviado correctamente';
         } else {
-            $validation_message['successmessage'] = 'Sorry, Mail could not be sent. Please contact server admin.';
+            $validation_message['successmessage'] = 'Sorry, Mail could not be sent. Please contact server admin: '.$mail->ErrorInfo;
         }
 
         //send email to user if user agreed or selected "copy me"
         if($cbxsendme == 'on'){
-            $mail2 = new PHPMailer;
 
             //some config if you need help based on your server configuration
             //$mail2->Host = 'localhost';  // Specify main and backup SMTP servers
@@ -139,14 +144,14 @@ if ($_POST) {
            // $mail2->Port = 25;                                    // TCP port to connect to
 
             //add admin from email
-            $mail2->From = $admin_email_from;
+            $mail->From = $admin_email_from;
             //add admin from name
-            $mail2->FromName = $admin_email_from_name;
+            $mail->FromName = $admin_email_from_name;
             //now send to user
             //$mail->From = $admin_email_from;
            // $mail->FromName = $admin_email_from_name;
             //$mail->all_recipients = array();
-            $mail2->addAddress($cbxemail ,$cbxname);     // Add a recipient, user who fillted the contact form
+            $mail->addAddress($cbxemail ,$cbxname);     // Add a recipient, user who fillted the contact form
             //$mail->addAddress('ellen@example.com');               // Name is optional
             //$mail->addReplyTo('info@example.com', 'Information');
             //$mail->addCC('cc@example.com');
@@ -154,18 +159,18 @@ if ($_POST) {
 
             //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
             //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
-            $mail2->isHTML(true);                                  // Set email format to HTML
+            $mail->isHTML(true);                                  // Set email format to HTML
 
-            $mail2->Subject = 'Copy Mail:'.$admin_send_subject;
-            $mail2->Body    = $cbxmessage;
+            $mail->Subject = 'Copia del correo:'.$admin_send_subject;
+            $mail->Body    = $cbxmessage;
             //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
-            if($mail2->send() === true) {
-                $validation_message['successmessage'] = 'Message has been sent successfully !';
+            if($mail->send() === true) {
+                $validation_message['successmessage'] = 'Copia del mensaje enviada satisfactoriamente.';
 
 
             } else {
-                $validation_message['successmessage'] = 'Sorry, Mail could not be sent. Please contact server admin.';
+                $validation_message['successmessage'] = 'Sorry, Mail could not be sent. Please contact server admin: '.$mail2->ErrorInfo;
 
             }
         }

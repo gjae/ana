@@ -26,3 +26,16 @@
     background-size: cover;
     color: #fff;
 }
+
+.cbx-contactform-area .cbx-contactform-inner {
+    background: rgba(245, 27, 10, 0.78);
+}
+
+.lz-git-form-control {
+    border: 1px solid #f73b3b !important;
+}
+
+.lz-git-submit-btn {
+    background-color: @brandcolor2;
+    border: 1px solid #ba0808;
+}
